@@ -1,0 +1,16 @@
+[user]
+	name = Yoshiki Takeoka
+	email = takeoka@adobe.com
+[core]
+	excludesfile = /Users/takeoka/dotfiles/git/.gitignore_global
+	excludefile = /Users/takeoka/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/takeoka/.stCommitMsg
+[url "https://"]
+	insteadOf = git://
